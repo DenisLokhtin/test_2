@@ -3,6 +3,7 @@ import {Container, Typography} from "@mui/material";
 import axiosApi from "../axiosApi";
 import React, {useEffect} from "react";
 import {useGlobalState} from "../state";
+import {AllNews} from "../types";
 
 const Main: React.FC = () => {
     const [news, setNews] = [...useGlobalState('news')];
@@ -21,7 +22,7 @@ const Main: React.FC = () => {
 
     const printNews = () => {
         if (allNews.length !== 0) {
-            return allNews.map((value: { id: string; title: string; body: string }) => {
+            return allNews.map((value: AllNews) => {
                 return (
                     <NewsCard
                         key={value.id}

@@ -1,8 +1,9 @@
 import {createGlobalState} from "react-hooks-global-state";
+import {State} from "./types"
 
 // Изменил тип на корректный, без any
 
-const {useGlobalState} = createGlobalState<{ news: [], localNews: {title: string, body: string, id: string}[], profile: {}, newsTitle: string, newsBody: string }>({
+const {useGlobalState} = createGlobalState<State>({
     news: [],
     localNews: [],
     profile: {},
