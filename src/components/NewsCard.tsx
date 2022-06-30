@@ -2,8 +2,9 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import {NewsCardsProps} from "../types";
 
-const NewsCard: (props: { title: string; body: string }) => JSX.Element = (props: {title: string; body: string}) => {
+const NewsCard: (props: NewsCardsProps) => JSX.Element = (props: NewsCardsProps) => {
     return (
         <Card sx={{ minWidth: 275 }} className='NewsCard'>
             <CardContent>
