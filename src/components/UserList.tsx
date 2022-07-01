@@ -1,8 +1,9 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import {Container} from "@mui/material";
+import {UserListProps} from "../types";
 
-const UserList: (props: { arr: {} }) => JSX.Element = (props: { arr: {} }) => {
+const UserList: (props: UserListProps) => JSX.Element = (props: UserListProps) => {
 
     // Эта функция разворачивает вложенные объекты для их печати
     
